@@ -1,0 +1,39 @@
+{
+  "name": "vscode-activity-tracker",
+  "displayName": "VSCode Activity Tracker",
+  "description": "Tracks file open, save, and typing events and logs to MongoDB.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+  "onStartupFinished",
+  "onLanguage:javascript",
+  "onLanguage:typescript"
+],
+  "main": "./extension.js",
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "mongodb": "^6.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+  "commands": [
+  {
+    "command": "extension.trackActivity",
+    "title": "Track Activity"
+  }
+]
+},
+  "author": "arun",
+  "license": "ISC"
+}
