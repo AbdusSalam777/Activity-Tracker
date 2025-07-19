@@ -16,7 +16,7 @@ const vscode = require("vscode");
 const mongodb_1 = require("mongodb");
 const os = require("os");
 // Replace with your actual MongoDB connection string
-const MONGO_URI = 'mongodb+srv://abdusalam0381:6rg0VbAFq0dVKJTy@cluster0.yd187o8.mongodb.net/Extension?retryWrites=true&w=majority&appName=Cluster0';
+const MONGO_URI = 'MONGO_URI';
 let mongoClient;
 function connectToMongoDB() {
     return __awaiter(this, void 0, void 0, function* () {
